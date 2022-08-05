@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Juego del Ahorcado</h1>
+
+      <button class="btn-info btn">Como Jugar</button>
+
+      <div class="modal">
+        <ol class="modal-tarjeta">
+          <h2>Reglas del juego</h2>
+          <button class="cerrar-modal btn btn-modal">cerrar</button>
+          <li>
+            El juego comienza con una palabra incognita, esto se ve en las
+            líneas punteadas
+          </li>
+          <li>Hay un casillero donde podrás elegir una letra por vez</li>
+          <li>
+            Para enviar la letra escogida deberas apretar el botón de enviar
+          </li>
+          <li>Las letras escogidas se mostraran a un lado de la pantalla</li>
+          <li>
+            Si escoges adecuadamente llenaras los vacios de la palabra incognita
+          </li>
+          <li>
+            Si fallas estaras un paso mas de completar al hombre que cuelga de
+            la horca
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <p class="guardado-de-letras"></p>
+
+    <form class="container-letra-input">
+      <input type="text" maxlength="1" class="letra-input" />
+      <button class="btn-letra-input btn" type="submit">Enviar</button>
+    </form>
+    <div class="container-palabra-incognita"></div>
+
+    <div class="ahorcado-icono-container">
+      <div class="madera-cabezal"></div>
+      <div class="madera-mastil"></div>
+      <div class="madera-trasversal"></div>
+    </div>
+    <button class="btn-reiniciar btn">Reiniciar</button>
+
+    <div class="modal-victoria-container"></div>
+    <div class="modal-perdiste-container"></div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

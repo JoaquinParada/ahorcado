@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(143, 143, 143, 0.849);
+  background-color: rgb(247, 247, 242);
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-letra-input {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+  background-color: rgb(241, 241, 238);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(156, 156, 156, 0.568);
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+  padding-left: 17px;
+}
+
+.container-palabra-incognita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px 20px;
+  justify-content: center;
+}
+
+.cada-letra {
+  width: 60px;
+  height: 40px;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ahorcado-icono-container {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: rgb(241, 241, 238);
+}
+.madera-cabezal {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  background-color: black;
+}
+.madera-mastil {
+  position: absolute;
+  width: 20px;
+  height: 300px;
+  background-color: black;
+}
+.madera-trasversal {
+  position: absolute;
+  left: 30px;
+  width: 10px;
+  height: 70px;
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.cabeza {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  top: 20px;
+  left: 100px;
+}
+.cuerpo {
+  position: absolute;
+  top: 70px;
+  left: 125px;
+  width: 3px;
+  height: 100px;
+  background-color: black;
+  border: 1px solid black;
+}
+.extremidad-izq {
+  position: absolute;
+  top: 82px;
+  left: 100px;
+  width: 1px;
+  height: 72px;
+  background-color: black;
+  border: 1px solid black;
+  transform: rotate(45deg);
+}
+
+.extremidad-der {
+  position: absolute;
+  top: 82px;
+  right: 96px;
+  width: 1px;
+  height: 72px;
+  background-color: black;
+  border: 1px solid black;
+  transform: rotate(-45deg);
+}
+.pierna {
+  top: 160px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  background-color: rgba(36, 36, 36, 0.836);
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-tarjeta {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: rgb(252, 252, 244);
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btn-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn {
+  min-width: 100px;
+  max-width: 125px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(235, 170, 117);
+  cursor: pointer;
+}
+
+.guardado-de-letras {
+  width: 60%;
+  height: 80px;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.modal-victoria-container {
+  position: fixed;
+  top: 0;
+  background-color: rgba(36, 36, 36, 0.836);
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-perdiste-container {
+  position: fixed;
+  top: 0;
+  background-color: rgba(36, 36, 36, 0.836);
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .cada-letra {
+    width: 30px;
+    font-size: 25px;
+  }
+  .modal-tarjeta {
+    width: 95%;
+    height: 98%;
+    font-size: 17px;
+    gap: 20px;
+    padding: 30px;
+    text-align: justify;
+  }
+}
